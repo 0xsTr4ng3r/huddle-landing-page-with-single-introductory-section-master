@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: small;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+}
+header img{
+    margin-left: 120px;
+}
+article{
+    max-width: 420px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 33px;
+    padding-bottom: 10px;
+}
+p{
+    margin-bottom: 20px;
+}
+.reg{
+    color: hsl(300, 69%, 71%);
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+.reg:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    /* padding: 10px 25px;
+    border-radius: 50px; */
+
+}
+.main-body {
+    /* margin:0px 60px; */
+}
+article a{
+    color: white;
+    text-decoration:none;
+    font-size: large;
+}
+.main-body{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+aside{
+    position: absolute;
+    right: 0%;
+    margin-right: 60px;
+}
+.fa {
+    width: 15px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 5px;
+    border-radius: 50%;
+  }
+[class*="fa-"] {
+    border:1px solid white;
+    color: white;
+}  
+[class*="fa-"]:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width:720px){
+    header img{
+        margin: 30px 20px;
+    }
+    section img{
+        width: 300px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .main-body{
+        margin: 0%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    article p{
+        margin-bottom: 40px;
+    }
+    article{
+        margin: 40px auto;
+    }
+    footer{
+        position: relative;
+    }
+    aside{
+        margin: 0px;
+        margin-bottom: 30px;
+        position: relative;
+        text-align: center;
+    }
+}
